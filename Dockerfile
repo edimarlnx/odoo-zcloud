@@ -7,10 +7,11 @@ ENV PASSWORD=""
 
 COPY odoo.conf /etc/odoo/
 
+COPY entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
+
 VOLUME /var/lib/odoo
 
 EXPOSE 8069
-
-ENTRYPOINT ["odoo"]
-CMD ["-i", "base"]
 
