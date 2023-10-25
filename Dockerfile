@@ -11,3 +11,5 @@ VOLUME /var/lib/odoo
 
 EXPOSE 8069
 
+CMD ["odoo", "-i", "base"]
+
