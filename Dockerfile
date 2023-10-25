@@ -16,3 +16,5 @@ VOLUME /var/lib/odoo
 
 EXPOSE 8069
 
+ENTRYPOINT ["/entrypoint.sh", "--no-database-list"]
+
